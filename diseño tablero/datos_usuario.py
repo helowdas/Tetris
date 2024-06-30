@@ -8,3 +8,4 @@ class Datos_usuario:
         
     def run(self):
         self.display_surface.blit(self.surface,self.rect)
+        pygame.draw.rect(self.display_surface, blanco, self.rect, 2, 2)  #BORDE DEL TABLERO

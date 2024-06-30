@@ -45,12 +45,15 @@ marron='#9C6F43'
 
 #FORMA PIEZAS DICCIONARIO
 PIEZAS={
-    'T':{'forma': [(0,0), (-1,0), (1,0),(0,-1)], 'color': rojo},
+    'T':{'forma': [(0,0), (-1,0), (1,0),(0,-1),(0,-2)], 'color': rojo},
     'O':{'forma': [(0,0), (0,-1), (1,0),(1,-1)], 'color': amarillo},
     'J':{'forma': [(0,0), (0,-1), (0,1),(-1,1)], 'color': verde},
     'L':{'forma': [(0,0), (0,-1), (0,1),(1,1)], 'color': morado},
-    'I':{'forma': [(0,0), (0,-1), (0,-2),(0,1)], 'color': naranja},
+    'I':{'forma': [(0,0), (0,-1), (0,-2)], 'color': naranja},
+    'p':{'forma': [(0,0), (-1,0), (1,0)], 'color': rosado},
+    'z':{'forma': [(0,0), (-1,0), (0,1), (1,1)], 'color': aqua},
 }
+
 
 
 #COMPONENTES DEL JUEGO

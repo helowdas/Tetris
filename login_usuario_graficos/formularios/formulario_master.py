@@ -1,5 +1,5 @@
 import tkinter as tk
-from login_usuario.Utilerias import funciones_dimensiones as fd
+from Utilerias import funciones_dimensiones as fd
 
 # colores
 

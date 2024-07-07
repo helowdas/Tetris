@@ -1,9 +1,7 @@
 import sys
 import tkinter as tk
 from tkinter import ttk, messagebox
-from Utilerias import funciones_dimensiones as fd
-from formularios.formulario_master import panel_master
-
+from login_usuario_graficos.Utilerias import funciones_dimensiones as fd
 
 #clase para el login de usuario
 
@@ -24,17 +22,20 @@ class login_user:
         password = self.password.get()
         if(usuario == "root" and password == "1234"):
             self.ventana.destroy()
-            panel_master()
+            from menu.menu import pygame_menu
+            pygame_menu()
         else:
             messagebox.showerror(message="la contraseña o el usuarios son incorrectos", title="MENSAJE")
 
     def __init__(self):
+        # clase
         self.ventana = tk.Tk()
         self.ventana.title("Inicio de sesion")
         self.ventana.geometry("800x650")
         self.ventana.config(bg = "#3a7ff6")
         self.ventana.resizable(width=0, height=0)
         fd.centrar_ventana(self.ventana, 800, 650)
+        
 
         logo = fd.leer_imagen("login_usuario_graficos/utilerias/imagenes/logo_tetris.png", (200, 200))
 

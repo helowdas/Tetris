@@ -1,3 +1,7 @@
-from menu import menu
+from login_usuario_graficos.formularios.formulario_login import login_user
 
-menu.pygame_menu()
+def main():
+    login_user()
+
+if __name__ == "__main__":
+    main()

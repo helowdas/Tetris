@@ -1,5 +1,5 @@
 import pygame
-import botones
+from menu import botones
 
 pygame.init()
 
@@ -20,11 +20,11 @@ font = pygame.font.SysFont("arialblack", 40)
 TEXT_COL = (255, 255, 255)
 
 # Cargar imágenes de los botones
-jugar_img = pygame.image.load("jugar.png").convert_alpha()
-informes_img = pygame.image.load("informe.png").convert_alpha()
-cerrar_sesion_img = pygame.image.load("salir.png").convert_alpha()
-informes_top10_img = pygame.image.load("top10.png").convert_alpha()
-atras_img = pygame.image.load("atras.png").convert_alpha()
+jugar_img = pygame.image.load("menu/jugar.png").convert_alpha()
+informes_img = pygame.image.load("menu/informe.png").convert_alpha()
+cerrar_sesion_img = pygame.image.load("menu/salir.png").convert_alpha()
+informes_top10_img = pygame.image.load("menu/top10.png").convert_alpha()
+atras_img = pygame.image.load("menu/atras.png").convert_alpha()
 
 # Crear los botones
 jugar_boton = botones.Button((SCREEN_WIDTH - 250) // 2, (SCREEN_HEIGHT - 100) //2 , jugar_img, 0.8)

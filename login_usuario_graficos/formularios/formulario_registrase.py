@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-from Utilerias import funciones_dimensiones as fd
+from login_usuario_graficos.Utilerias import funciones_dimensiones as fd
 
 
 class registrar_usuario:
@@ -16,6 +16,7 @@ class registrar_usuario:
 
 
     def __init__(self):
+        # clase
         self.ventana = tk.Tk()
         self.ventana.title("registro de Usuario")
         self.ventana.geometry("900x800")

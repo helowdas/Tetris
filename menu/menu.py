@@ -40,45 +40,49 @@ def draw_text(text, font, text_col, x, y):
 
 
 # Bucle principal del juego
-run = True
-while run:
+def pygame_menu():
+    menu_state = "main"
+    run = True
+    while run:
 
-    screen.fill((51, 153, 255))
-    draw_text("Tetris Break", font, TEXT_COL, (SCREEN_HEIGHT - 110) //2, (SCREEN_WIDTH - 600)//2)    
+        screen.fill((51, 153, 255))
+        draw_text("Tetris Break", font, TEXT_COL, (SCREEN_HEIGHT - 110) //2, (SCREEN_WIDTH - 600)//2)    
     # Comprobar si el juego está pausado
     #if game_paused:
         # Comprobar el estado del menú
-    if menu_state == "main":
+        if menu_state == "main":
             # Dibujar los botones del menú de pausa
-        if jugar_boton.draw(screen):
-            menu_state = "Jugar"
-            if menu_state == "jugar":
-                print("SELECCIONE MODO DE JUEGO")
-        if informes_boton.draw(screen):
-            menu_state = "Informe"
-        if cerrar_sesion.draw(screen):
-            run = False
+            if jugar_boton.draw(screen):
+                menu_state = "Jugar"
+                if menu_state == "jugar":
+                    print("SELECCIONE MODO DE JUEGO")
+            if informes_boton.draw(screen):
+                menu_state = "Informe"
+            if cerrar_sesion.draw(screen):
+                run = False
         # Comprobar si el menú de opciones está abierto
-    if menu_state == "Informe":
+        if menu_state == "Informe":
             # Dibujar los botones de las diferentes opciones
-        if atras_img.draw(screen):
-            menu_state = "main"
-        if informes_top10_img.draw(screen):
-            print("TOP 10 DE VENEZUELA")
-
             if atras_img.draw(screen):
                 menu_state = "main"
+            if informes_top10_img.draw(screen):
+                print("TOP 10 DE VENEZUELA")
+
+                if atras_img.draw(screen):
+                    menu_state = "main"
     #else:
         #draw_text("Presiona ESPACIO para pausar", font, TEXT_COL, 160, 250)
 
     # Manejador de eventos
-    for event in pygame.event.get():
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_SPACE:
-                game_paused = True
-        if event.type == pygame.QUIT:
-            run = False
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    game_paused = True
+            if event.type == pygame.QUIT:
+                run = False
 
-    pygame.display.update()
+        pygame.display.update()
 
-pygame.quit()
+    pygame.quit()
+
+

@@ -18,7 +18,7 @@ ORANGE = (255, 165, 0)
 COLOR_BOTON=(240,240,240)
 COLOR_BOTON_CLICK=(150,150,150)
 
-MENSAJES_ODS=["ods1.jpg","ods2.jpg","ods3.jpg","ods4.jpg","ods5.jpg","ods6.jpg","ods7.jpg","ods1.jpg","ods2.jpg","ods3.jpg","ods4.jpg","ods5.jpg","ods6.jpg","ods7.jpg","ods1.jpg","ods2.jpg","ods3.jpg"]
+MENSAJES_ODS=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg"]
 
 ESTADOS_DE_VENEZUELA=  ["AMAZONAS", "ANZOÁTEGUI", "APURE", "ARAGUA", "BARINAS", "BOLÍVAR", "CARABOBO", "COJEDES", "DELTA AMACURO", "DISTRITO CAPITAL", "FALCÓN", "GUÁRICO", "LARA", "MÉRIDA", "MIRANDA", "MONAGAS", "NUEVA ESPARTA", "PORTUGUESA", "SUCRE", "TÁCHIRA", "TRUJILLO", "VARGAS", "YARACUY", "ZULIA"]
 

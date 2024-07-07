@@ -17,7 +17,7 @@ class panel_master:
         self.ventana.config(bg= NEGRO)
         self.ventana.resizable(width=0, height=0)
 
-        logo = fd.leer_imagen("login_usuario/utilerias/imagenes/logo_tetris.png", (200, 200))
+        logo = fd.leer_imagen("login_usuario_graficos/utilerias/imagenes/logo_tetris.png", (200, 200))
 
         etiqueta = tk.Label (self.ventana, image=logo, bg="#3a7ff6")
         etiqueta.place (x=0, y=0, relheight=1, relwidth=1)

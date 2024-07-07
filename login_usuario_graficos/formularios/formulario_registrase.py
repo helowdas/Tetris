@@ -23,7 +23,7 @@ class registrar_usuario:
         self.ventana.resizable(width=0, height=0)
         fd.centrar_ventana(self.ventana, 900, 800)
 
-        logo = fd.leer_imagen("login_usuario/utilerias/imagenes/logo_tetris.png", (200, 250))
+        logo = fd.leer_imagen("login_usuario_graficos/utilerias/imagenes/logo_tetris.png", (200, 250))
 
         #espacio del logo
         espacio_logo = tk.Frame(self.ventana, bd=0, width=250, relief=tk.SOLID, padx=0, pady=0, bg="#1c2833" )

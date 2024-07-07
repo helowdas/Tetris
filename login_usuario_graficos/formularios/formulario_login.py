@@ -9,7 +9,7 @@ class login_user:
 
     def registrar_usuario(self):
         self.ventana.destroy()
-        from formularios.formulario_registrase import registrar_usuario
+        from login_usuario_graficos.formularios.formulario_registrase import registrar_usuario
         registrar_usuario()
 
 

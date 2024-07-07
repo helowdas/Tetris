@@ -85,4 +85,6 @@ def pygame_menu():
 
     pygame.quit()
 
+    from login_usuario_graficos.formularios.formulario_login import login_user
+    login_user()
 

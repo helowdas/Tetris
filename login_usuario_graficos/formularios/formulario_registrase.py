@@ -7,7 +7,7 @@ class registrar_usuario:
 
     def volver_login(self):
         self.ventana.destroy()
-        from formularios.formulario_login import login_user
+        from login_usuario_graficos.formularios.formulario_login import login_user
         login_user()
 
     

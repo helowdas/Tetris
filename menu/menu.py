@@ -50,7 +50,7 @@ def pygame_menu():
         screen.fill((51, 153, 255))
         draw_text("Tetris Break", font, TEXT_COL, (SCREEN_HEIGHT - 110) //2, (SCREEN_WIDTH - 600)//2)    
     # Comprobar si el juego está pausado
-    #if game_paused:
+
         # Comprobar el estado del menú
         if menu_state == "main":
             # Dibujar los botones del menú de pausa
@@ -77,8 +77,7 @@ def pygame_menu():
             tetris.tetris()
 
 
-    #else:
-        #draw_text("Presiona ESPACIO para pausar", font, TEXT_COL, 160, 250)
+
 
     # Manejador de eventos
         for event in pygame.event.get():

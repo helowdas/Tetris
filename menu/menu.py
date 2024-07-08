@@ -1,6 +1,8 @@
 import pygame
 from menu import botones
 
+
+
 pygame.init()
 
 # Crear ventana de juego
@@ -54,8 +56,7 @@ def pygame_menu():
             # Dibujar los botones del menú de pausa
             if jugar_boton.draw(screen):
                 menu_state = "Jugar"
-                if menu_state == "jugar":
-                    print("SELECCIONE MODO DE JUEGO")
+                
             if informes_boton.draw(screen):
                 menu_state = "Informe"
             if cerrar_sesion.draw(screen):
@@ -70,6 +71,12 @@ def pygame_menu():
 
                 if atras_img.draw(screen):
                     menu_state = "main"
+
+        if menu_state == "Jugar":
+            from charbel import tetris
+            tetris.tetris()
+
+
     #else:
         #draw_text("Presiona ESPACIO para pausar", font, TEXT_COL, 160, 250)
 
